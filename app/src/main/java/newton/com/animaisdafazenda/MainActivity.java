@@ -1,5 +1,6 @@
 package newton.com.animaisdafazenda;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 int posicao = i;
-                String textoDaPosicao = listaAnimais.getItemAtPosition(posicao).toString();
-
-                Toast.makeText(getApplicationContext(),textoDaPosicao,Toast.LENGTH_LONG).show();
+                String identidade = String.valueOf(posicao);
+                Intent intent = new Intent(MainActivity.this,DescricaoActivity.class);
+                intent.putExtra("identificador",identidade);
+                startActivity(intent);
 
             }
         });

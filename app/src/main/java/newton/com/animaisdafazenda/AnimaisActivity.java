@@ -22,11 +22,11 @@ public class AnimaisActivity extends Activity {
 
         //criando o banco de dados
         bancoDeDados = openOrCreateDatabase("Banco", Context.MODE_PRIVATE,null);
-        bancoDeDados.execSQL("CREATE TABLE IF NOT EXISTS tbl_animais (Codigo INT NOT NULL,Nome VARCHAR, Especie VARCHAR, Porte VARCHAR)");
+        bancoDeDados.execSQL("CREATE TABLE IF NOT EXISTS tbl_animais (Codigo INTEGER NOT NULL,Nome VARCHAR, Especie VARCHAR, Porte VARCHAR)");
 
 
         //inserir os dados
-        /*
+
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('1','Galinha','Aves','Pequeno');");
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('2','Porco','Suino','Medio');");
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('3','Boi','Bovino','Grande');");
@@ -37,7 +37,7 @@ public class AnimaisActivity extends Activity {
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('8','Egua','Equino','Grande');");
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('9','Cavalo','Equino','Grande');");
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('10','Peixe','Peixes','Medio');");
-        */
+
 
 
         //contador de tempo pra ir pra tela do main
