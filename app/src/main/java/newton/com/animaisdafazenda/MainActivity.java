@@ -20,9 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private ListView listaAnimais;
     SQLiteDatabase bancoDeDados;
     private ArrayList<String> animais;
-    /*= {
-            "Galinha","Porco","Boi","Vacas","Bezerros(as)","Patos","Perus","Eguas","Cavalos","Peixes"
-    };*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
