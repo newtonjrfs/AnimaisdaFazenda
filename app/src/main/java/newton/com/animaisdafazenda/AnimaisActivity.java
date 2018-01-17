@@ -11,7 +11,7 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 public class AnimaisActivity extends Activity {
-    final int MILISEGUNDOS = 2500;
+    final int MILISEGUNDOS = 2000;
     SQLiteDatabase bancoDeDados;
 
 
@@ -27,7 +27,7 @@ public class AnimaisActivity extends Activity {
 
         //inserir os dados
 
-        bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('1','Galinha','Aves','Pequeno');");
+        /*bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('1','Galinha','Aves','Pequeno');");
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('2','Porco','Suino','Medio');");
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('3','Boi','Bovino','Grande');");
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('4','Vaca','Bovino','Grande');");
@@ -36,7 +36,7 @@ public class AnimaisActivity extends Activity {
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('7','Peru','Aves','Pequeno');");
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('8','Egua','Equino','Grande');");
         bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('9','Cavalo','Equino','Grande');");
-        bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('10','Peixe','Peixes','Medio');");
+        bancoDeDados.execSQL("INSERT INTO tbl_animais VALUES ('10','Peixe','Peixes','Medio');");*/
 
 
 

@@ -36,11 +36,15 @@ public class DescricaoActivity extends AppCompatActivity {
         String codigo = extra.getString("identificador");
 
         int selecao = Integer.parseInt(codigo);
-        selecao++;
+        selecao = selecao + 1;
 
 
         Cursor c = bancoDeDados.rawQuery("SELECT * FROM tbl_animais WHERE Codigo="+selecao,null);
         if (c.moveToFirst()){
+            String id1 = c.getString(0);
+            String id2 = c.getString(1);
+            String id3 = c.getString(2);
+            String id4 = c.getString(3);
             id.setText("Codigo de identificação : " + c.getString(0));
             nome.setText("Nome do animal : " + c.getString(1));
             especie.setText("Especie do animal :" + c.getString(2));
